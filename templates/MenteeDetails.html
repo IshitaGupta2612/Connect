@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mentee Details</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+<!-- ======= Mentee Application Form ======= -->
+   
+<div class="container-contact100">
+	<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+  
+	<div class="wrap-contact100">
+	  <form class="contact100-form validate-form" action="/MenteeDetails" method="POST" id="regForm2">
+		<span class="contact100-form-title">
+		  Mentee Application form
+		</span>
+  
+		<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+		  <input class="input100" type="text" name="name2" placeholder="Full Name">
+		  <span class="focus-input100"></span>
+		</div>
+  
+		
+  
+		<div class="wrap-input100 validate-input" data-validate = "Please enter email: e@a.x">
+		  <input class="input100" type="text" name="email2" placeholder="Email">
+		  <span class="focus-input100"></span>
+		</div>
+  
+		<div class="wrap-input100 validate-input" data-validate = "Please enter Pronouns">
+		  <input class="input100" type="text" name="pronouns2" placeholder="Pronouns">
+		  <span class="focus-input100"></span>
+		</div>
+		<!--Check Boxes Tags-->
+		<h5>Tool Tags</h5><br>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="AD" id="flexCheckDefault">
+			<label class="form-check-label" for="flexCheckDefault" name="AD2">
+			  Android Development
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="AI" id="flexCheckDefault" name="AI2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Artificial Intelligence/Machine Learning
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="coding" id="flexCheckDefault" name="coding2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Coding
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="CS" id="flexCheckDefault" name="CS2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Computer Science
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="CyS" id="flexCheckDefault" name="CyS2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Cyber Security
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="DS" id="flexCheckDefault" name="DS2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Data Science
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="IT" id="flexCheckDefault" name="IT2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Information Technology
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="IOS" id="flexCheckDefault" name="IOS2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  IOS Development
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="robotics" id="flexCheckDefault" name="robotics2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Robotics
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="SE" id="flexCheckDefault" name="SE2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Software Engineering
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="UI" id="flexCheckDefault" name="UI2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  User Interface/User Experience Design
+			</label>
+		  </div>
+  
+		  <div class="form-check">
+			<input class="form-check-input" type="checkbox" value="WD" id="flexCheckDefault" name="WD2">
+			<label class="form-check-label" for="flexCheckDefault">
+			  Web Design
+			</label>
+		  </div>
+		  <br>
+	
+		<!--Check Boxes end-->
+  
+		<h5>Timezone</h5><br>
+		<label for="dropdownMenuButton2">TimeZones:</label>
+			  <select name="dropdownMenuButton2" id="dropdownMenuButton2">
+	  
+		  <option class="dropdown-item" value="UTC" >UTC</option>
+		  <option class="dropdown-item" value="ECT" >ECT</option>  
+		  <option class="dropdown-item" value="EET" >EET</option>
+		  <option class="dropdown-item" value="ART" >ART</option>
+		  <option class="dropdown-item" value="EAT" >EAT</option>
+		  <option class="dropdown-item" value="MET" >MET</option>
+		  <option class="dropdown-item" value="NET" >NET</option>
+		  <option class="dropdown-item" value="PLT" >PLT</option>
+		  <option class="dropdown-item" value="IST" >IST</option>
+		  <option class="dropdown-item" value="BST" >BST</option>
+		  <option class="dropdown-item" value="VST" >VST</option>
+		  <option class="dropdown-item" value="CTT" >CTT</option>
+		  <option class="dropdown-item" value="JST" >JST</option>
+		  <option class="dropdown-item" value="ACT" >ACT</option>
+		  <option class="dropdown-item" value="AET" >AET</option>
+		  <option class="dropdown-item" value="SST" >SST</option>
+		  <option class="dropdown-item" value="NST" >NST</option>
+		  <option class="dropdown-item" value="MIT" >MIT</option>
+		  <option class="dropdown-item" value="HST" >HST</option>
+		  <option class="dropdown-item" value="AST" >AST</option>
+		  <option class="dropdown-item" value="PST" >PST</option>
+		  <option class="dropdown-item" value="PNT" >PNT</option>
+		  <option class="dropdown-item" value="MST" >MST</option>
+		  <option class="dropdown-item" value="CST" >CST</option>
+		  <option class="dropdown-item" value="EST" >EST</option>
+		  <option class="dropdown-item" value="IET" >IET</option>
+		  <option class="dropdown-item" value="PRT" >PRT</option>
+		  <option class="dropdown-item" value="AGT" >AGT</option>
+		  <option class="dropdown-item" value="BET" >BET</option>
+			
+			</select> 
+			
+		  
+		<br>
+  
+  
+  
+	   
+  
+	  <div class="wrap-input100 validate-input" data-validate = "Enter a short Bio">
+		<textarea class="input100" name="Bio2" placeholder="Your Bio"></textarea>
+		<span class="focus-input100"></span>
+	  </div>
+  
+	  <div class="wrap-input100 validate-input" data-validate = "Enter your goals">
+		<textarea class="input100" name="goals2" placeholder="Your Goals"></textarea>
+		<span class="focus-input100"></span>
+	  </div>
+  
+	  <div class="wrap-input100 validate-input" data-validate = "Availability">
+		<input class="input100" type="text" name="Availability2" placeholder="Hours per week">
+		<span class="focus-input100"></span>
+	  </div>
+	  
+  
+		<div class="container-contact100-form-btn">
+		  <button class="contact100-form-btn">
+			Apply
+		  </button>
+		</div>
+	  </form>
+  
+	</div>
+  </div>
+  
+  
+  
+  <div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="static/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+
+</body>
+</html>
